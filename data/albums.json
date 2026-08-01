@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Music Bank",
+        "cover": "assets/albums/music-bank/cover.jpg",
+        "photos": 58,
+        "date": "2026.08.01",
+        "new": true
+    },
+    {
+        "title": "Airport",
+        "cover": "assets/albums/airport/cover.jpg",
+        "photos": 126,
+        "date": "2026.07.28",
+        "new": false
+    },
+    {
+        "title": "Instagram",
+        "cover": "assets/albums/instagram/cover.jpg",
+        "photos": 39,
+        "date": "2026.07.20",
+        "new": false
+    }
+]

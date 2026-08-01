@@ -1,0 +1,32 @@
+[
+    {
+        "image": "assets/albums/music-bank/003.webp",
+        "album": "Music Bank",
+        "date": "2026.08.01"
+    },
+    {
+        "image": "assets/albums/airport/001.webp",
+        "album": "Airport",
+        "date": "2026.07.29"
+    },
+    {
+        "image": "assets/albums/instagram/004.webp",
+        "album": "Instagram",
+        "date": "2026.07.25"
+    },
+    {
+        "image": "assets/albums/music-bank/002.webp",
+        "album": "Music Bank",
+        "date": "2026.07.20"
+    },
+    {
+        "image": "assets/albums/airport/006.webp",
+        "album": "Airport",
+        "date": "2026.07.18"
+    },
+    {
+        "image": "assets/albums/instagram/005.webp",
+        "album": "Instagram",
+        "date": "2026.07.15"
+    }
+]

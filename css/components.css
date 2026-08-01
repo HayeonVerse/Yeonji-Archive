@@ -1,0 +1,224 @@
+/* ==========================================
+   Buttons
+========================================== */
+
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:54px;
+
+    padding:0 28px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.btn-primary{
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            #6F90FF
+        );
+
+    box-shadow:0 15px 40px rgba(65,105,225,.35);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    color:#fff;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid var(--border);
+
+}
+
+.btn-secondary:hover{
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   Dashboard Card
+========================================== */
+
+.card{
+
+    position:relative;
+
+    background:var(--glass);
+
+    backdrop-filter:blur(24px);
+    -webkit-backdrop-filter:blur(24px);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        var(--shadow-card);
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            rgba(255,255,255,.04),
+
+            transparent
+
+        );
+
+    pointer-events:none;
+
+}
+
+.card-body{
+
+    position:relative;
+
+    z-index:2;
+
+    padding:32px;
+
+}
+
+.card-title{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.5rem;
+
+    margin-bottom:10px;
+
+}
+
+.card-subtitle{
+
+    color:var(--text-secondary);
+
+}
+
+.dashboard-card{
+
+    transition:.35s ease;
+    min-width:180px;
+
+}
+
+.dashboard-card:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.02);
+
+    border-color:
+        rgba(65,105,225,.45);
+
+    box-shadow:
+
+        0 30px 80px rgba(0,0,0,.45),
+
+        0 0 50px rgba(65,105,225,.25);
+
+}
+
+.dashboard-card strong{
+
+    display:block;
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:2.25rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-bottom:10px;
+
+}
+
+.dashboard-card small{
+
+    display:block;
+
+    color:var(--text-secondary);
+
+    text-transform:uppercase;
+
+    letter-spacing:.12em;
+
+    font-size:.72rem;
+
+    margin-bottom:12px;
+
+}
+
+/* ==========================================
+   Dashboard Icons
+========================================== */
+
+.dashboard-icon{
+
+    width:44px;
+    height:44px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:18px;
+
+    border-radius:14px;
+
+    font-size:1.15rem;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(65,105,225,.20),
+            rgba(65,105,225,.05)
+        );
+
+    border:1px solid rgba(65,105,225,.30);
+
+    box-shadow:
+        0 0 24px rgba(65,105,225,.15);
+
+}

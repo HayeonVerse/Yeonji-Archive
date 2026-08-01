@@ -1,0 +1,341 @@
+/* ==========================================
+   Album Grid
+========================================== */
+
+.album-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:28px;
+
+}
+
+.album-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    transition:.35s ease;
+
+    background:#111827;
+
+    cursor:pointer;
+
+}
+
+.album-card:hover{
+
+    transform:
+
+        translateY(-10px)
+        scale(1.015);
+
+    box-shadow:
+
+        0 40px 90px rgba(0,0,0,.45),
+
+        0 0 50px rgba(65,105,225,.18);
+
+}
+
+.album-cover{
+
+    position:relative;
+
+    aspect-ratio:4 / 5;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+}
+
+.album-cover img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:transform .6s ease;
+
+}
+
+.album-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.album-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:26px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05) 0%,
+            rgba(0,0,0,.18) 40%,
+            rgba(0,0,0,.88) 100%
+        );
+
+}
+
+.album-info{
+
+    color:white;
+
+}
+
+.album-info h3{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin-bottom:14px;
+
+}
+
+.album-details{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:.95rem;
+
+    color:rgba(255,255,255,.82);
+
+}
+
+.album-badge{
+
+    align-self:flex-start;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    backdrop-filter:blur(18px);
+
+    background:
+
+        rgba(65,105,225,.82);
+
+    color:white;
+
+    font-size:.72rem;
+
+    font-weight:700;
+
+    letter-spacing:.14em;
+
+    text-transform:uppercase;
+
+}
+
+@media(max-width:1000px){
+
+    .album-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+.featured-photo{
+
+    grid-column:span 2;
+
+}
+
+}
+
+/* ==========================================
+   Photo Grid
+========================================== */
+
+.photo-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:28px;
+
+    aspect-ratio:3/4;
+
+    cursor:pointer;
+
+    background:#101827;
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease;
+
+}
+
+.photo-card:hover{
+
+    transform:
+
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+
+        0 40px 90px rgba(0,0,0,.45),
+
+        0 0 40px rgba(65,105,225,.15);
+
+}
+
+.photo-card img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+
+        transform .7s ease,
+
+        filter .35s ease;
+
+}
+
+.photo-card:hover img{
+
+    transform:scale(1.08);
+
+    filter:brightness(1.05);
+
+}
+
+.photo-overlay{
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:24px;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    background:
+
+        linear-gradient(
+
+            to top,
+
+            rgba(3,7,18,.92) 0%,
+
+            rgba(3,7,18,.55) 45%,
+
+            transparent 100%
+
+        );
+
+}
+
+.photo-album{
+
+    font-family:"Space Grotesk",sans-serif;
+
+    font-size:1.35rem;
+
+    font-weight:700;
+
+    color:white;
+
+    margin-bottom:6px;
+
+}
+
+.photo-date{
+
+    color:rgba(255,255,255,.75);
+
+    font-size:.9rem;
+
+}
+
+.photo-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,minmax(0,1fr));
+
+    gap:28px;
+
+}
+
+@media(max-width:1000px){
+
+    .photo-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .photo-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+.featured-photo{
+
+    grid-column:span 1;
+
+    aspect-ratio:3 / 4;
+
+}
+
+}
+
+.featured-photo{
+
+    grid-column:span 2;
+
+    aspect-ratio:16/9;
+
+}

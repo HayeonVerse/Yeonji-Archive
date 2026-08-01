@@ -1,0 +1,74 @@
+/* ===============================
+   Container
+=============================== */
+
+.container {
+    width: min(100% - 48px, var(--container));
+    margin-inline: auto;
+}
+
+/* ===============================
+   Sections
+=============================== */
+
+.section {
+    padding: 100px 0;
+}
+
+/* ===============================
+   Grid
+=============================== */
+
+.grid {
+    display: grid;
+    gap: 24px;
+}
+
+/* ===============================
+   Flex Helpers
+=============================== */
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================================
+   Responsive Grid
+========================================== */
+
+.grid-3{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:24px;
+
+}
+
+@media(max-width:1100px){
+
+    .grid-3{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+.page{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:96px;
+
+}

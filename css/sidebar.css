@@ -1,0 +1,44 @@
+.gallery-layout{
+
+    display:grid;
+
+    grid-template-columns:
+
+        280px
+        1fr;
+
+    gap:40px;
+
+}
+
+.gallery-sidebar{
+
+    position:sticky;
+
+    top:100px;
+
+    align-self:start;
+
+}
+
+.gallery-content{
+
+    min-width:0;
+
+}
+
+@media(max-width:1000px){
+
+.gallery-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-sidebar{
+
+position:static;
+
+}
+
+}

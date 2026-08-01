@@ -1,0 +1,55 @@
+/* ==========================================
+   Homepage Sections
+========================================== */
+
+.home-section{
+
+    padding:120px 0;
+
+}
+
+.home-section:first-child{
+
+    padding-top:0;
+
+}
+
+.section-title{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+    margin-bottom:40px;
+
+}
+
+.section-heading{
+
+    font-family:"Space Grotesk",sans-serif;
+    font-size:clamp(2rem,4vw,3rem);
+
+}
+
+.section-description{
+
+    color:var(--text-secondary);
+    max-width:520px;
+
+}
+
+.section-link{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.section-link:hover{
+
+    color:white;
+
+}
